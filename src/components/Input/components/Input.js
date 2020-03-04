@@ -1,18 +1,13 @@
 import React from 'react'
 
-class Input extends React.Component {
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         value: '',
-    //     }
-    // }
-
-
+export class Input extends React.Component {
 
     render() {
-        return <input onChange={this.props.search} />
+        debugger
+        return <input size={this.props.size} 
+                      onChange={this.props.onChange} 
+                      className={this.props.class} 
+                      placeholder={this.props.placeholder}
+                      id={this.props.id}/>
     }
 }
-
-export { Input }
