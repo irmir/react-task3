@@ -74,10 +74,11 @@ export class App extends React.Component {
     }
 
     addItem = () => {      
-        this.state.list.push({title: this.state.inputValue});
+        // this.state.list.push({title: this.state.inputValue});
 
         this.setState({
             ...this.state,
+            list: [...this.state.list, {title: this.state.inputValue}],
             isModalWindowOpen: false,
             isTextEntered: true,
         })
